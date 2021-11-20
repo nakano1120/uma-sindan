@@ -1,0 +1,40 @@
+body{
+    text-align:center;
+    background-color:#fffef8;
+    color:#151515;
+}
+footer{
+    background-color:#eeeeee;
+    color:#232323;
+    font-size:80%;
+    margin:3vh 2vw;
+}
+.logo{
+    margin:3vh 0px;
+    width:30vw;
+    height:auto;
+}
+.startbutton{
+    margin:6vh 2vw;
+    border:3px solid #ff4dcc;
+    background-color:#ffcaf5;
+    padding:2vh 5vw;
+    text-decoration:none;
+}
+.startbutton:hover{
+    border:3px solid #ffcaf5;
+    background-color:#ff4dcc;
+}
+.choicebutton{
+    margin:1vh 2vw;
+    border:3px solid #ff4dcc;
+    background-color:#ffcaf5;
+    padding:3vh 0;
+    width:45vw;
+    text-decoration:none;
+}
+.choicebutton:hover{
+    font-size:110%;
+    border:3px solid #ffcaf5;
+    background-color:#ff4dcc;
+}
