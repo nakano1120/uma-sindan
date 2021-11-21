@@ -6,21 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/style.css" rel="stylesheet">
         <title>
-            ウマ娘診断 - 質問10
+            ウマ娘診断 - 結果
         </title>
     </head>
     <body>
-        <h1>
-            第10問
-        </h1>
-        <h2>
-            もしあなたがウマ娘ならどうなりたい？
-        </h2>
-        <button class="choicebutton" onclick="choicequestion(10,1)">三冠を取りたい！</button><br>
-        <button class="choicebutton" onclick="choicequestion(10,2)">怪我なく過ごしたい！</button><br>
-        <button class="choicebutton" onclick="choicequestion(10,3)">最速を極めたい！</button><br>
-        <button class="choicebutton" onclick="choicequestion(10,4)">人気者になりたい！</button><br>
-        <button class="choicebutton" onclick="choicequestion(10,5)">お腹いっぱい食べたい！</button><br>
+        <div id="main">
+            <h1>
+                結果
+            </h1>
+            あなたと似ているウマ娘は...<br>
+            <h1>
+                <span id="yourumaname"></span>
+            </h1>
+            <h2>
+                <span id="yourtxt"></span>
+            </h2>
+        </div>
         <footer>
 
             <a href="../index.html">トップページへ戻る</a><br>
@@ -29,5 +30,6 @@
             ※このページを閲覧する際はJavaScriptを有効化をお願いします。
         </footer>
         <script src="../js/main.js"></script>
+        <script src="../js/result.js"></script>
     </body>
 </html>
