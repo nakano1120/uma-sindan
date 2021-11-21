@@ -14,8 +14,9 @@ class Person {
     agr = 0;
     con = 0;
     txt = "";
+    col = "";
 
-    constructor(name, neu, ext, ope, agr, con, txt) {
+    constructor(name, neu, ext, ope, agr, con, txt, col) {
         this.name = name;
         this.neu = neu;
         this.ext = ext;
@@ -23,18 +24,20 @@ class Person {
         this.agr = agr;
         this.con = con;
         this.txt = txt;
+        this.col = col;
     }
     
 }
 const characters = [
-    new Person("スペシャルウィーク", 60, 90, 85, 77, 69, "いつも明るくて元気いっぱい！"),
-    new Person("トウカイテイオー", 75, 80, 50, 22, 62, "無邪気な自信家！"),
-    new Person("サイレンススズカ", 20, 25, 11, 67, 96, "ストイックな天才肌！"),
-    new Person("メジロマックイーン", 65, 41, 62, 43, 33, "正統派お嬢様！"),
-    new Person("ゴールドシップ", 2, 50, 90, 10, 5, "スーパーウルトラ自由人！"),
-    new Person("ウオッカ", 9, 38, 29, 38, 55, "カッコいいが第一！"),
-    new Person("ダイワスカーレット", 50, 40, 20, 42, 34, "強気で生意気な負けず嫌い！"),
-    new Person("ハルウララ", 99, 95, 92, 36, 88, "いつも負けても決して諦めない！")
+    new Person("スペシャルウィーク", 60, 90, 85, 77, 49, "いつも明るくて元気いっぱい！","#ee74cd"),
+    new Person("トウカイテイオー", 75, 82, 50, 22, 62, "無邪気な自信家！","#3376d2"),
+    new Person("サイレンススズカ", 20, 25, 41, 67, 96, "ストイックな天才肌！","#3cc17c"),
+    new Person("メジロマックイーン", 65, 41, 62, 43, 33, "正統派お嬢様！","#00b5be"),
+    new Person("ゴールドシップ", 38, 50, 90, 10, 44, "スーパーウルトラ自由人！","#da3c57"),
+    new Person("ウオッカ", 19, 38, 29, 38, 55, "カッコいいが第一！","#d4c200"),
+    new Person("ダイワスカーレット", 50, 40, 20, 42, 34, "強気で生意気な負けず嫌い！","#4f64d8"),
+    new Person("ハルウララ", 88, 94, 72, 36, 58, "いつも負けても決して諦めない！","#fa7395"),
+    new Person("マルゼンスキー", 39, 75, 72, 66, 58, "おそらくナウなヤング！","#fa7395")
 ]
 const resultvalue = [
     [
@@ -119,6 +122,7 @@ window.onload = function(){
     console.log(charadif.indexOf(Math.min.apply(null,charadif)))
     document.getElementById("yourumaname").innerHTML=""+characters[charadif.indexOf(Math.min.apply(null,charadif))].name
     document.getElementById("yourtxt").innerHTML=characters[charadif.indexOf(Math.min.apply(null,charadif))].txt
+    document.getElementById("main").style.color=characters[charadif.indexOf(Math.min.apply(null,charadif))].col
 }
 function getUrlQueries() {
     let queryStr = window.location.search.slice(1);  // 文頭?を除外
