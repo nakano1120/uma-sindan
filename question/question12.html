@@ -2,23 +2,54 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/style.css" rel="stylesheet">
         <title>
             ウマ娘診断 - 結果
+
         </title>
     </head>
     <body>
         <h1>
             結果
         </h1>
+        <div id="yourparam">
+            <h3>
+                あなたの性格<br>
+                <div>
+                    物事には...<br>
+                    <img class="param" src="../img/param1h.png">
+                    <img class="graph" id="neu" src="../img/param3.png">
+                    <img class="param" src="../img/param1l.png">
+                </div>
+                <div>
+                    性格は...<br>
+                    <img class="param" src="../img/param2h.png">
+                    <img class="graph" id="ext" src="../img/param3.png">
+                    <img class="param" src="../img/param2l.png">
+                </div>                <div>
+                    考え方は...<br>
+                    <img class="param" src="../img/param3h.png">
+                    <img class="graph" id="ope" src="../img/param3.png">
+                    <img class="param" src="../img/param3l.png">
+                </div>                <div>
+                    どちらかというと...<br>
+                    <img class="param" src="../img/param4h.png">
+                    <img class="graph" id="agr" src="../img/param3.png">
+                    <img class="param" src="../img/param4l.png">
+                </div>                <div>
+                    何かと...<br>
+                    <img class="param" src="../img/param5h.png">
+                    <img class="graph" id="con" src="../img/param3.png">
+                    <img class="param" src="../img/param5l.png">
+                </div>
+            </h3>
+
+        </div>
         <div id="main">
             <h3>
                 あなたに一番近いウマ娘は...<br>
             </h3>
             <h1>
-                
                 <span id="yourumaname"></span>
             </h1>
             <h2>
@@ -27,7 +58,7 @@
             <h3>
                 距離:<span id="dis"></span>m<br>
             </h3>
-            <img class="distance" src="../img/distance.png">
+            <img class="distance" src="../img/distance.png" alt="ウマ娘の距離">
         </div>
         <div id="difmain">
             <h3>
@@ -43,11 +74,10 @@
             <h3>
                 距離:<span id="difdis"></span>m<br>
             </h3>
-            <img class="distance" src="../img/distance.png">
+            <img class="distance" src="../img/distance.png" alt="ウマ娘の距離">
         </div>
         <h3>URLをコピーして自分の結果を共有しよう！</h3>
         <footer>
-
             <a href="../index.html">トップページへ戻る</a><br>
             このサイトは「ウマ娘 プリティーダービー」の二次創作サイトです。<br>
             株式会社Cygamesとは一切関係ございません。<br>
