@@ -131,7 +131,7 @@ const parameter=["neu","ext","ope","agr","con"]
 window.onload = function(){
     answer = getUrlQueries()
     for(let i=0;i<=4;i++){
-        for(let l=0;l<=8;l++){
+        for(let l=0;l<answer.length;l++){
             yourparam[i]+=(resultvalue[l][answer[l]-1][i]);
         }
     }
