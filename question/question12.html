@@ -9,74 +9,70 @@
         </title>
     </head>
     <body>
-        <h1>
-            結果
-        </h1>
-        <div id="yourparam">
-            <h3>
-                あなたの性格<br>
-                <div>
-                    物事には...<br>
-                    <img class="param" src="../img/param1h.png">
-                    <img class="graph" id="neu" src="../img/param3.png">
-                    <img class="param" src="../img/param1l.png">
-                </div>
-                <div>
-                    性格は...<br>
-                    <img class="param" src="../img/param2h.png">
-                    <img class="graph" id="ext" src="../img/param3.png">
-                    <img class="param" src="../img/param2l.png">
-                </div>                <div>
-                    考え方は...<br>
-                    <img class="param" src="../img/param3h.png">
-                    <img class="graph" id="ope" src="../img/param3.png">
-                    <img class="param" src="../img/param3l.png">
-                </div>                <div>
-                    どちらかというと...<br>
-                    <img class="param" src="../img/param4h.png">
-                    <img class="graph" id="agr" src="../img/param3.png">
-                    <img class="param" src="../img/param4l.png">
-                </div>                <div>
-                    何かと...<br>
-                    <img class="param" src="../img/param5h.png">
-                    <img class="graph" id="con" src="../img/param3.png">
-                    <img class="param" src="../img/param5l.png">
-                </div>
-            </h3>
-
+        <main>
+            <h1>結果</h1>
+            <div class="result-container" id="most-close">
+                <p class="strong-3">
+                    あなたから一番近いウマ娘は...
+                </p>
+                <p class="horse-name"></p>
+                <p class="horse-characteristics"></p>
+                <p class="distance"></p>
+                <picture class="distance-image">
+                    <img src="../img/distance.png" alt="相手までの距離の画像">
+                </picture>
+            </div>
+            <div class="result-container" id="most-far">
+                <p class="strong-3">
+                    あなたから一番遠いウマ娘は...
+                </p>
+                <p class="horse-name"></p>
+                <p class="horse-characteristics"></p>
+                <p class="distance"></p>
+                <picture class="distance-image">
+                    <img src="../img/distance.png" alt="相手までの距離の画像">
+                </picture>
+            </div>
+        </main>
+        <div class="strong-3">
+            <h2>あなたの性格</h2>
+            <div>
+                物事には...<br>
+                <img class="param" src="../img/param1h.png">
+                <img class="graph" id="neu" src="../img/param3.png">
+                <img class="param" src="../img/param1l.png">
+                <p class="point" id="point-neu">50</p>
+            </div>
+            <div>
+                性格は...<br>
+                <img class="param" src="../img/param2h.png">
+                <img class="graph" id="ext" src="../img/param3.png">
+                <img class="param" src="../img/param2l.png">
+                <p class="point" id="point-ext">50</p>
+            </div>               
+            <div>
+                考え方は...<br>
+                <img class="param" src="../img/param3h.png">
+                <img class="graph" id="ope" src="../img/param3.png">
+                <img class="param" src="../img/param3l.png">
+                <p class="point" id="point-ope">50</p>
+            </div>
+            <div>
+                どちらかというと...<br>
+                <img class="param" src="../img/param4h.png">
+                <img class="graph" id="agr" src="../img/param3.png">
+                <img class="param" src="../img/param4l.png">
+                <p class="point" id="point-agr">50</p>
+            </div>
+            <div>
+                何かと...<br>
+                <img class="param" src="../img/param5h.png">
+                <img class="graph" id="con" src="../img/param3.png">
+                <img class="param" src="../img/param5l.png">
+                <p class="point" id="point-con">50</p>
+            </div>
         </div>
-        <div id="main">
-            <h3>
-                あなたに一番近いウマ娘は...<br>
-            </h3>
-            <h1>
-                <span id="yourumaname"></span>
-            </h1>
-            <h2>
-                <span id="yourtxt"></span>
-            </h2>
-            <h3>
-                距離:<span id="dis"></span>m<br>
-            </h3>
-            <img class="distance" src="../img/distance.png" alt="ウマ娘の距離">
-        </div>
-        <div id="difmain">
-            <h3>
-                あなたから一番遠いウマ娘は...<br>
-            </h3>
-            <h1>
-                
-                <span id="difumaname"></span>
-            </h1>
-            <h2>
-                <span id="diftxt"></span>
-            </h2>
-            <h3>
-                距離:<span id="difdis"></span>m<br>
-            </h3>
-            <img class="distance" src="../img/distance.png" alt="ウマ娘の距離">
-        </div>
-        <h3>URLをコピーして自分の結果を共有しよう！</h3>
+        <p class="strong-3">URLをコピーして自分の結果を共有しよう！</p>
         <footer>
             <a href="../index.html">トップページへ戻る</a><br>
             このサイトは「ウマ娘 プリティーダービー」の二次創作サイトです。<br>
