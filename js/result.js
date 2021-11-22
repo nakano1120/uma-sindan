@@ -142,29 +142,29 @@ window.onload = function(){
     );
     console.log(charadif)
     console.log(charadif.indexOf(Math.min.apply(null,charadif)))
-    document.getElementById("yourumaname").innerHTML=""+characters[charadif.indexOf(Math.min.apply(null,charadif))].name
-    document.getElementById("yourtxt").innerHTML=characters[charadif.indexOf(Math.min.apply(null,charadif))].txt
-    document.getElementById("main").style.color=characters[charadif.indexOf(Math.min.apply(null,charadif))].col
-    document.getElementById("main").style.border="3px solid "+characters[charadif.indexOf(Math.min.apply(null,charadif))].col
-    document.getElementById("dis").innerHTML=charadif[charadif.indexOf(Math.min.apply(null,charadif))]
-    document.getElementById("difumaname").innerHTML=""+characters[charadif.indexOf(Math.max.apply(null,charadif))].name
-    document.getElementById("diftxt").innerHTML=characters[charadif.indexOf(Math.max.apply(null,charadif))].txt
-    document.getElementById("difmain").style.color=characters[charadif.indexOf(Math.max.apply(null,charadif))].col
-    document.getElementById("difmain").style.border="3px solid "+characters[charadif.indexOf(Math.max.apply(null,charadif))].col
-    document.getElementById("difdis").innerHTML=charadif[charadif.indexOf(Math.max.apply(null,charadif))]
+    document.getElementsByClassName("horse-name")[0].innerHTML=""+characters[charadif.indexOf(Math.min.apply(null,charadif))].name
+    document.getElementsByClassName("horse-characteristics")[0].innerHTML=characters[charadif.indexOf(Math.min.apply(null,charadif))].txt
+    document.getElementById("most-close").style.color=characters[charadif.indexOf(Math.min.apply(null,charadif))].col
+    document.getElementById("most-close").style.border="3px solid "+characters[charadif.indexOf(Math.min.apply(null,charadif))].col
+    document.getElementsByClassName("distance")[0].innerHTML="距離:"+charadif[charadif.indexOf(Math.min.apply(null,charadif))]+"m"
+    document.getElementsByClassName("horse-name")[1].innerHTML=""+characters[charadif.indexOf(Math.max.apply(null,charadif))].name
+    document.getElementsByClassName("horse-characteristics")[1].innerHTML=characters[charadif.indexOf(Math.max.apply(null,charadif))].txt
+    document.getElementById("most-far").style.color=characters[charadif.indexOf(Math.max.apply(null,charadif))].col
+    document.getElementById("most-far").style.border="3px solid "+characters[charadif.indexOf(Math.max.apply(null,charadif))].col
+    document.getElementsByClassName("distance")[1].innerHTML="距離:"+charadif[charadif.indexOf(Math.max.apply(null,charadif))]+"m"
     for(let o=0;o<=4;o++){
         if(yourparam[o]>=80){
-            document.getElementById(parameter[o]).src = "../img/param5.png"
+            document.getElementById(parameter[o]).src = "../img/param1.png"
         }else if(yourparam[o]>=60){
-            document.getElementById(parameter[o]).src = "../img/param4.png"
+            document.getElementById(parameter[o]).src = "../img/param2.png"
         }else if(yourparam[o]>=40){
             document.getElementById(parameter[o]).src = "../img/param3.png"
         }else if(yourparam[o]>=20){
-            document.getElementById(parameter[o]).src = "../img/param2.png"
+            document.getElementById(parameter[o]).src = "../img/param4.png"
         }else{
-            document.getElementById(parameter[o]).src = "../img/param3.png"
+            document.getElementById(parameter[o]).src = "../img/param5.png"
         }
-        
+        document.getElementById("point-"+parameter[o]).innerText = yourparam[o]+"点"
     }
 }
 
