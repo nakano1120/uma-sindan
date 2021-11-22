@@ -38,3 +38,21 @@ footer{
     border:3px solid #ffcaf5;
     background-color:#ff4dcc;
 }
+.distance{
+    width:20vw;
+    height:auto;
+}
+#main{
+    text-align:inline-block;
+    margin:1vw auto;
+    width:75%;
+    background-color:#ffffcc;
+    border:3px solid #ff4dcc
+}
+#difmain{
+    text-align:inline-block;
+    margin:1vw auto;
+    width:75%;
+    background-color:#ccffff;
+    border:3px solid #ff4dcc;
+}
