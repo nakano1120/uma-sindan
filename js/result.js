@@ -143,6 +143,13 @@ window.onload = function(){
     document.getElementById("yourumaname").innerHTML=""+characters[charadif.indexOf(Math.min.apply(null,charadif))].name
     document.getElementById("yourtxt").innerHTML=characters[charadif.indexOf(Math.min.apply(null,charadif))].txt
     document.getElementById("main").style.color=characters[charadif.indexOf(Math.min.apply(null,charadif))].col
+    document.getElementById("main").style.border="3px solid "+characters[charadif.indexOf(Math.min.apply(null,charadif))].col
+    document.getElementById("dis").innerHTML=charadif[charadif.indexOf(Math.min.apply(null,charadif))]
+    document.getElementById("difumaname").innerHTML=""+characters[charadif.indexOf(Math.max.apply(null,charadif))].name
+    document.getElementById("diftxt").innerHTML=characters[charadif.indexOf(Math.max.apply(null,charadif))].txt
+    document.getElementById("difmain").style.color=characters[charadif.indexOf(Math.max.apply(null,charadif))].col
+    document.getElementById("difmain").style.border="3px solid "+characters[charadif.indexOf(Math.max.apply(null,charadif))].col
+    document.getElementById("difdis").innerHTML=charadif[charadif.indexOf(Math.max.apply(null,charadif))]
 }
 function getUrlQueries() {
     let queryStr = window.location.search.slice(1);  // 文頭?を除外
