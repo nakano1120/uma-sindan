@@ -38,21 +38,55 @@ footer{
     border:3px solid #ffcaf5;
     background-color:#ff4dcc;
 }
-.distance{
+.distance-image img{
     width:20vw;
     height:auto;
 }
-#main{
+#most-close{
     text-align:inline-block;
     margin:1vw auto;
     width:75%;
     background-color:#ffffcc;
     border:3px solid #ff4dcc
 }
-#difmain{
+#most-far{
     text-align:inline-block;
     margin:1vw auto;
     width:75%;
     background-color:#ccffff;
     border:3px solid #ff4dcc;
+}
+.param{
+    height:10vh;
+    width:15vw;
+}
+.graph{
+    height:10vh;
+    width:30vw;
+}
+h1, .strong-1, .horse-name {
+    font-size: 26px;
+}
+
+h2, .strong-2, .horse-characteristics {
+    font-size: 22px;
+}
+
+h3, .strong-3, .distance {
+    font-size: 18px;
+}
+
+h4, .strong-4, {
+    font-size: 14px;
+}
+
+h5, .strong-5 {
+    font-size: 12px;
+}
+
+h6, .strong-6 {
+    font-size: 8px;
+}
+.result-container, .point{
+    font-weight: bold;
 }
