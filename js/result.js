@@ -43,7 +43,8 @@ const characters = [
     new Person("タイキシャトル", 54, 92, 84, 37, 44, "パワフルで人懐っこいカウガール！","#73c032"),
     new Person("グラスワンダー", 64, 51, 56, 46, 99, "帰国子女だが生粋の大和撫子","#3a34ac"),
     new Person("ヒシアマゾン", 50, 74, 50, 72, 73, "頼れる熱血肌の姉御","#2185d0"),
-    new Person("エルコンドルパサー", 46, 99, 82, 56, 46, "ラテン系の情熱ウマ娘デース！","#dd4e31")
+    new Person("エルコンドルパサー", 46, 99, 82, 56, 46, "ラテン系の情熱ウマ娘デース！","#dd4e31"),
+    new Person("テイエムオペラオー", 42, 72, 74, 18, 42, "ナルシストだけどなんか喜劇王","#f271c4")
 ]
 const resultvalue = [
     [
@@ -126,6 +127,7 @@ const resultvalue = [
 ]
 let answer
 let yourparam = [50,50,50,50,50]
+const parameter=["neu","ext","ope","agr","con"]
 window.onload = function(){
     answer = getUrlQueries()
     for(let i=0;i<=4;i++){
@@ -150,7 +152,22 @@ window.onload = function(){
     document.getElementById("difmain").style.color=characters[charadif.indexOf(Math.max.apply(null,charadif))].col
     document.getElementById("difmain").style.border="3px solid "+characters[charadif.indexOf(Math.max.apply(null,charadif))].col
     document.getElementById("difdis").innerHTML=charadif[charadif.indexOf(Math.max.apply(null,charadif))]
+    for(let o=0;o<=4;o++){
+        if(yourparam[o]>=80){
+            document.getElementById(parameter[o]).src = "../img/param5.png"
+        }else if(yourparam[o]>=60){
+            document.getElementById(parameter[o]).src = "../img/param4.png"
+        }else if(yourparam[o]>=40){
+            document.getElementById(parameter[o]).src = "../img/param3.png"
+        }else if(yourparam[o]>=20){
+            document.getElementById(parameter[o]).src = "../img/param2.png"
+        }else{
+            document.getElementById(parameter[o]).src = "../img/param3.png"
+        }
+        
+    }
 }
+
 function getUrlQueries() {
     let queryStr = window.location.search.slice(1);  // 文頭?を除外
     // クエリがない場合は空のオブジェクトを返す
