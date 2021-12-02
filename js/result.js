@@ -182,7 +182,7 @@ function getUrlQueries() {
     return answeritems
 }
 function opentwitter(){
-    let text="あなたに一番近いウマ娘は...%0D%0A「"+document.getElementsByClassName("horse-name")[0].innerHTML+"」でした！%0D%0A #ウマ娘シンダン"
-    let turl="https://twitter.com/intent/tweet?text="+text+"&url="+window.location.href+"&hashtags="+"#ウマ娘シンダン";
+    let text="あなたに一番近いウマ娘は...%0D%0A「"+document.getElementsByClassName("horse-name")[0].innerHTML+"」でした！%0D%0A"
+    let turl="https://twitter.com/intent/tweet?text="+text+"&url="+encodeURI(window.location.href)+"&hashtags="+"#ウマ娘シンダン";
     window.open(turl,'_blank');
 }
