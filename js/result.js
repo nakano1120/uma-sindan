@@ -182,7 +182,7 @@ function getUrlQueries() {
     return answeritems
 }
 function opentwitter(){
-    let text="あなたに一番近いウマ娘は...%0D%0A「"+document.getElementsByClassName("horse-name")[0].innerHTML+"」でした！%0D%0A詳細結果はこちら⇨"+location.href
+    let text="あなたに一番近いウマ娘は...%0D%0A「"+document.getElementsByClassName("horse-name")[0].innerHTML+"」でした！%0D%0A詳細結果はこちら⇨"+location.href+"%0D%0A"+"#ウマ娘シンダン"
     let turl="https://twitter.com/intent/tweet?text="+text+"&url="+"https://nakano1120.github.io/uma-sindan/"+"&hashtags="+"#ウマ娘シンダン";
     window.open(turl,'_blank');
 }
