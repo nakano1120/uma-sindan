@@ -44,7 +44,7 @@ const characters = [
     new Person("グラスワンダー", 64, 51, 56, 46, 99, "帰国子女だが生粋の大和撫子","#3a34ac"),
     new Person("ヒシアマゾン", 50, 74, 50, 72, 73, "頼れる熱血肌の姉御","#2185d0"),
     new Person("エルコンドルパサー", 46, 99, 82, 56, 46, "ラテン系の情熱ウマ娘デース！","#dd4e31"),
-    new Person("テイエムオペラオー", 42, 72, 74, 18, 42, "ナルシストだけどなんか喜劇王","#f271c4")
+    new Person("テイエムオペラオー", 42, 72, 74, 18, 42, "ナルシストだけどなんか喜劇王","#f271c4"),
 ]
 const resultvalue = [
     [
@@ -180,4 +180,9 @@ function getUrlQueries() {
         answeritems.push(answer.slice(answer.indexOf("=")+1))
     );
     return answeritems
+}
+function opentwitter(){
+    let text="あなたに一番近いウマ娘は...%0D%0A「"+document.getElementsByClassName("horse-name")[0].innerHTML+"」でした！%0D%0A詳細結果はこちら⇨"+location.href
+    let turl="https://twitter.com/intent/tweet?text="+text+"&url="+"https://nakano1120.github.io/uma-sindan/"+"&hashtags="+"#ウマ娘シンダン";
+    window.open(turl,'_blank');
 }
