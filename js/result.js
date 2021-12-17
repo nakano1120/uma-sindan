@@ -182,7 +182,7 @@ function getUrlQueries() {
     return answeritems
 }
 function opentwitter(){
-    let text="#ウマ娘シンダン%0D%0Aあなたに一番近いウマ娘は...%0D%0A「"+document.getElementsByClassName("horse-name")[0].innerHTML+"」でした！%0D%0A"
+    let text="ウマ娘シンダン%0D%0Aあなたに一番近いウマ娘は...%0D%0A「"+document.getElementsByClassName("horse-name")[0].innerHTML+"」でした！%0D%0A"
     let turl="https://twitter.com/intent/tweet?text="+text+"&url="+encodeURIComponent(window.location.href)+"&hashtags="+"#ウマ娘シンダン";
     window.open(turl,'_blank');
 }
